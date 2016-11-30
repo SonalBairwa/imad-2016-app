@@ -9,13 +9,21 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/sonal/cs/animation.html',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui/sonal/css', 'animation.html'));
+app.get('/sonal/css/animation.css',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'animation.css'));
+});
+
+
+app.get('/sonal/css/bootstrap.css',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
+});
+app.get('/sonal/css/main.css',function(req,res){
+   res.sendFile(path.join(__dirname, 'ui', 'main.css'));
 });
 
 
 
-app.get('/article-two',function(req,res){
+app.get('/sonal/css/',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
