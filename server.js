@@ -9,15 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/sonal/css/animation.css',function(req,res){
+app.get('/animation',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'animation.css'));
 });
 
 
-app.get('/sonal/css/bootstrap.css',function(req,res){
+app.get('/bootstrap',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
 });
-app.get('/sonal/css/main.css',function(req,res){
+app.get('/main',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'main.css'));
 });
 
