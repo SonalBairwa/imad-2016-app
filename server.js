@@ -9,12 +9,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/',function(req,res){
+app.get('/ui',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'animation.css'));
 });
 
 
-app.get('/bootstrap',function(req,res){
+app.get('/bootstrap.css',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
 });
 app.get('/main',function(req,res){
@@ -23,7 +23,7 @@ app.get('/main',function(req,res){
 
 
 
-app.get('/sonal/css/',function(req,res){
+app.get('/',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
